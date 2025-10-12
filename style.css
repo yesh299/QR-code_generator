@@ -1,0 +1,81 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    box-sizing: border-box;
+}
+
+body {
+    background: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.container {
+    width: 400px;
+    padding: 25px 35px;
+    background: white;
+    border-radius: 10px;
+    text-align: center;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
+}
+
+.container p {
+    font-size: 18px;
+    font-weight: 600;
+    margin-bottom: 10px;
+    color: #333;
+}
+
+.container input {
+    width: 100%;
+    border: 1px solid #494eea;
+    outline: 0;
+    padding: 10px;
+    margin: 10px 0 20px;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+.container button {
+    width: 100%;
+    background: #494eea;
+    color: white;
+    border: 0;
+    outline: 0;
+    border-radius: 5px;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+    cursor: pointer;
+    margin: 20px 0;
+    font-weight: 500;
+    font-size: 16px;
+    padding: 10px;
+    transition: 0.3s;
+}
+
+.container button:hover {
+    background: #373fd1;
+}
+
+#imgbox {
+    margin-top: 20px;
+}
+
+#imgbox img {
+    width: 150px;
+}
+
+/* ✅ Fixed: Added 'px' units in animation and improved timing */
+.error {
+    animation: shake 0.2s linear 3;
+}
+
+@keyframes shake {
+    0% { transform: translateX(0); }
+    25% { transform: translateX(-4px); }
+    50% { transform: translateX(0); }
+    75% { transform: translateX(4px); }
+    100% { transform: translateX(0); }
+}
